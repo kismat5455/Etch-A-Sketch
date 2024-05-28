@@ -13,9 +13,38 @@
 </div>
 
 <body>
+    <div id="instructionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Welcome to <span class="sketch-title">Etch-a-Sketch</span>!</h2>
+            <ul class="instructions">
+                <li>Hover over the grid to draw.</li>
+                <li>Click the <span class="icon">🌈</span> button for random colors.</li>
+                <li>Click the <span class="icon">✏️</span> button for black.</li>
+                <li>Click the <span class="icon">🗑️</span> button to clear.</li>
+                <li>Click the <span class="icon">➕</span> button for a new grid.</li>
+                <li>Click the <span class="icon">🌙</span> to progressively darken each block.</li>
+            </ul>
+            <button class="start-btn" onclick="closeModal()">Start Drawing</button>
+        </div>
+    </div>
 
-    <div id="newGrid"><button id="newButton"> Create new grid </button></div>
+    <div id="newGrid">
+        <button id="newButton"> ➕ Create new grid </button>
+    </div>
+    <div id="menus">
+        <button id="rainbowButton">🌈 Rainbow Pencil Colour </button>
+        <button id="blackPencil"> ✏️ Black Pencil Colour </button>
+        <button id="clearButton"> 🗑️ Eraser </button>
+        <button id="darkenButton"> 🌙Progressive Dark Colour</button>
+    </div>
     <div id="grid-container"></div>
+
+    <footer>
+
+        <p>Designed by Kismat Ali</p>
+
+    </footer>
 
 </body>
 
